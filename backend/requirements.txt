@@ -2,6 +2,7 @@ asgiref==3.2.7
 audioread==2.1.8
 certifi==2020.4.5.1
 cffi==1.14.0
+cycler==0.10.0
 decorator==4.4.2
 dj-database-url==0.5.0
 dj-static==0.0.6
@@ -10,14 +11,21 @@ django-heroku==0.3.1
 djangorestframework==3.11.0
 gunicorn==20.0.4
 joblib==0.14.1
+kiwisolver==1.2.0
 librosa==0.7.2
 llvmlite==0.31.0
+matplotlib==3.2.1
 numba==0.48.0
 numpy==1.18.2
 psycopg2==2.8.5
 py==1.8.1
 pycparser==2.20
 pydub==0.23.1
+pyparsing==2.4.7
+PyQt5==5.12.3
+PyQt5-sip==4.19.18
+PyQtWebEngine==5.12.1
+python-dateutil==2.8.1
 python-decouple==3.3
 pytz==2019.3
 resampy==0.2.2
@@ -27,5 +35,6 @@ six==1.14.0
 SoundFile==0.10.3.post1
 sqlparse==0.3.1
 static3==0.7.0
+tornado==6.0.4
 whitenoise==5.0.1
 wincertstore==0.2
