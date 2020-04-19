@@ -25,7 +25,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['systemtestproject2.herokuapp.com',
+ALLOWED_HOSTS = ['system-test-project2.herokuapp.com',
 '127.0.0.1']
 
 
