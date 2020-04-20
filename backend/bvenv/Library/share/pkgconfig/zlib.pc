@@ -1,0 +1,13 @@
+prefix=C:/Users/Musa/Anaconda3/envs/bvenv/Library
+exec_prefix=C:/Users/Musa/Anaconda3/envs/bvenv/Library
+libdir=C:/Users/Musa/Anaconda3/envs/bvenv/Library/lib
+sharedlibdir=C:/Users/Musa/Anaconda3/envs/bvenv/Library/lib
+includedir=C:/Users/Musa/Anaconda3/envs/bvenv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

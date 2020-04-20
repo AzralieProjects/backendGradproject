@@ -32,7 +32,7 @@ def api_convert(request):
 
         print('fff ')
     # sound.export(wav,format="wav")
-        return wav    
+        return     'c'
     def f(method):
         return "<h1>MyClub Event Calendar"+method+"</h1>"
 
@@ -50,10 +50,8 @@ def api_convert(request):
         post_quary=request.POST
         # print(request.data)
         print(post_quary)
-
-        # files=request.META
         file=request.FILES['myfile']
-     
+        file =change_file(file)
 
     except:
         return HttpResponse({'error tt   '+method: 'Please provide correct file'},
@@ -62,9 +60,17 @@ def api_convert(request):
     # file = open("/path/to/your/song.mp3", "rb").read() 
 
     try:    
+        wav='fff'+'.wav'
+        print('here ')
+     
+        mp3_file=file
+        print('line before sound ')
+        sound=pydub.AudioSegment.from_mp3(mp3_file)
+        sound.export(wav, format="wav")
+        print('after sound')
+        # response = HttpResponse(wav, content_type='audio/wav')
 
-
-        response = HttpResponse(file, content_type='audio/mp3')
+        response = HttpResponse(file, content_type='audio/wav')
         response['Content-Disposition'] = 'attachment; filename="foo.xls"'
         print('finishes ')
     except IOError:

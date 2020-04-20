@@ -1,0 +1,172 @@
+{
+  "build": "py_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "numba >=0.32",
+    "numpy >=1.10.0",
+    "python",
+    "scipy >=0.13",
+    "setuptools",
+    "six >=1.3"
+  ],
+  "extracted_package_dir": "C:\\Users\\Musa\\Anaconda3\\pkgs\\resampy-0.2.2-py_0",
+  "features": "",
+  "files": [
+    "Lib/site-packages/resampy-0.2.2.dist-info/INSTALLER",
+    "Lib/site-packages/resampy-0.2.2.dist-info/LICENSE",
+    "Lib/site-packages/resampy-0.2.2.dist-info/METADATA",
+    "Lib/site-packages/resampy-0.2.2.dist-info/RECORD",
+    "Lib/site-packages/resampy-0.2.2.dist-info/WHEEL",
+    "Lib/site-packages/resampy-0.2.2.dist-info/top_level.txt",
+    "Lib/site-packages/resampy/__init__.py",
+    "Lib/site-packages/resampy/core.py",
+    "Lib/site-packages/resampy/data/kaiser_best.npz",
+    "Lib/site-packages/resampy/data/kaiser_fast.npz",
+    "Lib/site-packages/resampy/filters.py",
+    "Lib/site-packages/resampy/interpn.py",
+    "Lib/site-packages/resampy/version.py",
+    ".nonadmin",
+    "Lib/site-packages/resampy/__pycache__/__init__.cpython-38.pyc",
+    "Lib/site-packages/resampy/__pycache__/core.cpython-38.pyc",
+    "Lib/site-packages/resampy/__pycache__/filters.cpython-38.pyc",
+    "Lib/site-packages/resampy/__pycache__/interpn.cpython-38.pyc",
+    "Lib/site-packages/resampy/__pycache__/version.cpython-38.pyc"
+  ],
+  "fn": "resampy-0.2.2-py_0.tar.bz2",
+  "license": "ISC",
+  "link": {
+    "source": "C:\\Users\\Musa\\Anaconda3\\pkgs\\resampy-0.2.2-py_0",
+    "type": 1
+  },
+  "md5": "ca6c2b18f3d9f621f1faba04fbfa3f5b",
+  "name": "resampy",
+  "noarch": "python",
+  "package_tarball_full_path": "C:\\Users\\Musa\\Anaconda3\\pkgs\\resampy-0.2.2-py_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/resampy-0.2.2.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/resampy-0.2.2.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "9c21cf3da6675e5b28ba7bda19c7b1a8da9772a5244c59648435f412a6738886",
+        "sha256_in_prefix": "9c21cf3da6675e5b28ba7bda19c7b1a8da9772a5244c59648435f412a6738886",
+        "size_in_bytes": 743
+      },
+      {
+        "_path": "site-packages/resampy-0.2.2.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "0773da52d9ed2f5e5ee8624dad8b2e3fc5fd696bd9c1b12feb7769b8bbae033f",
+        "sha256_in_prefix": "0773da52d9ed2f5e5ee8624dad8b2e3fc5fd696bd9c1b12feb7769b8bbae033f",
+        "size_in_bytes": 1173
+      },
+      {
+        "_path": "site-packages/resampy-0.2.2.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "e4a1602a385bc0b5635255ea5363c19261314d8525aebef230ff24a9c2bbdffd",
+        "sha256_in_prefix": "e4a1602a385bc0b5635255ea5363c19261314d8525aebef230ff24a9c2bbdffd",
+        "size_in_bytes": 1141
+      },
+      {
+        "_path": "site-packages/resampy-0.2.2.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "ae121453793f815da20b2a4e34babecb0f2102f1ae5fe0680e02ffa2f0621d6d",
+        "sha256_in_prefix": "ae121453793f815da20b2a4e34babecb0f2102f1ae5fe0680e02ffa2f0621d6d",
+        "size_in_bytes": 93
+      },
+      {
+        "_path": "site-packages/resampy-0.2.2.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "c586fc1e348f05e05ae9dade0df8b400bc38880f04b27205bf55d593f8116619",
+        "sha256_in_prefix": "c586fc1e348f05e05ae9dade0df8b400bc38880f04b27205bf55d593f8116619",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "site-packages/resampy/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f65e7016ed411b1d8568ea983a268eed36862d15cd12e261583f451522f43774",
+        "sha256_in_prefix": "f65e7016ed411b1d8568ea983a268eed36862d15cd12e261583f451522f43774",
+        "size_in_bytes": 171
+      },
+      {
+        "_path": "site-packages/resampy/core.py",
+        "path_type": "hardlink",
+        "sha256": "0ffa9271023cf0e3e14a522b1abe077f8a7b00f090728353a7eb060ec46000c8",
+        "sha256_in_prefix": "0ffa9271023cf0e3e14a522b1abe077f8a7b00f090728353a7eb060ec46000c8",
+        "size_in_bytes": 3661
+      },
+      {
+        "_path": "site-packages/resampy/data/kaiser_best.npz",
+        "path_type": "hardlink",
+        "sha256": "67fab90360555b1704a6e84f75335eb306b166617f5b4de45a28ea225e69b0bb",
+        "sha256_in_prefix": "67fab90360555b1704a6e84f75335eb306b166617f5b4de45a28ea225e69b0bb",
+        "size_in_bytes": 262736
+      },
+      {
+        "_path": "site-packages/resampy/data/kaiser_fast.npz",
+        "path_type": "hardlink",
+        "sha256": "97b22e148c3cecabfe99446589b8ab5f2e8e5646a9625451b834fa58b081d8cd",
+        "sha256_in_prefix": "97b22e148c3cecabfe99446589b8ab5f2e8e5646a9625451b834fa58b081d8cd",
+        "size_in_bytes": 66128
+      },
+      {
+        "_path": "site-packages/resampy/filters.py",
+        "path_type": "hardlink",
+        "sha256": "19c9fc850889f6e1627bb3d3f671743a5e26bf237c2776c2d27fa8595c6e51a1",
+        "sha256_in_prefix": "19c9fc850889f6e1627bb3d3f671743a5e26bf237c2776c2d27fa8595c6e51a1",
+        "size_in_bytes": 6059
+      },
+      {
+        "_path": "site-packages/resampy/interpn.py",
+        "path_type": "hardlink",
+        "sha256": "a3f3f75abe3ef7dca4104d376b5ae0b3fcd4f3e733401be8c30d72d63dd74a54",
+        "sha256_in_prefix": "a3f3f75abe3ef7dca4104d376b5ae0b3fcd4f3e733401be8c30d72d63dd74a54",
+        "size_in_bytes": 1905
+      },
+      {
+        "_path": "site-packages/resampy/version.py",
+        "path_type": "hardlink",
+        "sha256": "5409db32fcb72109a5f947a55c315f2b196dd3060cde5f431c841aafa287ad42",
+        "sha256_in_prefix": "5409db32fcb72109a5f947a55c315f2b196dd3060cde5f431c841aafa287ad42",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "Lib/site-packages/resampy/__pycache__/__init__.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/resampy/__pycache__/core.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/resampy/__pycache__/filters.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/resampy/__pycache__/interpn.cpython-38.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "Lib/site-packages/resampy/__pycache__/version.cpython-38.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "ee703a6b9a23b2adf329986ced833b6c189237bc2d780723cd926b2510e580a6",
+  "size": 339560,
+  "subdir": "noarch",
+  "timestamp": 1565916102212,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/resampy-0.2.2-py_0.tar.bz2",
+  "version": "0.2.2"
+}
