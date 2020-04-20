@@ -6,7 +6,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.status import HTTP_400_BAD_REQUEST
 import pydub
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
-# import os 
+import os 
 # import librosa    
 
 
@@ -29,29 +29,20 @@ def api_convert(request):
         sound.export(wav, format="wav")
         # y, sr = librosa.load(wav, sr=8000) # Downsample to 8kHz
         # librosa.output.write_wav(wav, y, sr)
-
-        print('fff ')
     # sound.export(wav,format="wav")
         return     'c'
-    def f(method):
-        return "<h1>MyClub Event Calendar"+method+"</h1>"
-
-    method=''
-    if request.method == 'GET':
-        method='get'
-        print(' get method')
-    if request.method == 'POST':
-        method='post'
-        print('post method')
+   
+   
 
     #  return HttpResponse("<h1>MyClub Event Calendar</h1>")
     try:
+        method='ll'
       
         post_quary=request.POST
         # print(request.data)
         print(post_quary)
         file=request.FILES['myfile']
-        file =change_file(file)
+        
 
     except:
         return HttpResponse({'error tt   '+method: 'Please provide correct file'},
@@ -62,14 +53,7 @@ def api_convert(request):
     try:    
         wav='fff'+'.wav'
         print('here ')
-     
-        mp3_file=file
-        print('line before sound ')
-        sound=pydub.AudioSegment.from_mp3(mp3_file)
-        sound.export(wav, format="wav")
-        print('after sound')
-        # response = HttpResponse(wav, content_type='audio/wav')
-
+        file=change_file(file)
         response = HttpResponse(file, content_type='audio/wav')
         response['Content-Disposition'] = 'attachment; filename="foo.xls"'
         print('finishes ')
