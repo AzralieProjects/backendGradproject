@@ -28,6 +28,10 @@ DEBUG = config('DEBUG')
 ALLOWED_HOSTS = ['system-test-project2.herokuapp.com',
 '127.0.0.1']
 
+# CHANNEL_TYPE_VALUE = 0
+# FREQ_TYPE_VALUE = 8000
+# CONVERT_TYPE_VALUE = 0
+
 
 # Application definition
 
@@ -39,7 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'api'
+    'audiofield',
+
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'audiofield.middleware.threadlocals.ThreadLocals'
 ]
 
 ROOT_URLCONF = 'server.urls'
