@@ -10,7 +10,7 @@ import os
 from .models import My_Test
 from .serializers import My_TestSerializer
 # import librosa    
-import soundfile as sf
+# import soundfile as sf
 import time
 import wave
 import os, tempfile, zipfile
@@ -19,18 +19,18 @@ from django.http import HttpResponse
 
 from wsgiref.util import FileWrapper
 
-def send_file(request):
-    """                                                                         
-    Send a file through Django without loading the whole file into              
-    memory at once. The FileWrapper will turn the file object into an           
-    iterator for chunks of 8KB.                                                 
-    """
-    fname='./mediafiles/des.wav'
-    filename = fname # Select your file here.                                
-    wrapper = FileWrapper(file(filename))
-    response = HttpResponse(wrapper, content_type='text/plain')
-    response['Content-Length'] = os.path.getsize(filename)
-    return response
+# def send_file(request):
+#     """                                                                         
+#     Send a file through Django without loading the whole file into              
+#     memory at once. The FileWrapper will turn the file object into an           
+#     iterator for chunks of 8KB.                                                 
+#     """
+#     fname='./mediafiles/des.wav'
+#     filename = fname # Select your file here.                                
+#     wrapper = FileWrapper(file(filename))
+#     response = HttpResponse(wrapper, content_type='text/plain')
+#     response['Content-Length'] = os.path.getsize(filename)
+#     return response
 class My_TestViewSet(viewsets.ModelViewSet):
 
     pass
@@ -69,16 +69,16 @@ def api_convert(request):
         # except:
         #     print('error')
         return 'wavefile'
-    def sendfile(name):
-        base='./mediafiles/'
-        fname=base+name+'.wav'
-        print(fname)
-        f = open(fname,"rb") 
-        response = HttpResponse()
-        response.write(f.read())
-        response['Content-Type'] ='audio/mp3'
-        response['Content-Length'] =os.path.getsize(fname )
-        return response
+    # def sendfile(name):
+    #     base='./mediafiles/'
+    #     fname=base+name+'.wav'
+    #     print(fname)
+    #     f = open(fname,"rb") 
+    #     response = HttpResponse()
+    #     response.write(f.read())
+    #     response['Content-Type'] ='audio/mp3'
+    #     response['Content-Length'] =os.path.getsize(fname )
+    #     return response
 
    
     #  returnfname HttpResponse("<h1>MyClub Event Calendar</h1>")
@@ -103,11 +103,6 @@ def api_convert(request):
     try:
         name=request.data['filename']
 
-        # sendfile(name)
-    
-        # response = HttpResponse(wav, content_type='audio/wav')
-        # temp=change_file(file)
-        # fname='./mediafiles/dest.wav'
         base='./mediafiles/'
         fname=base+name+'.wav'
         print(fname)
