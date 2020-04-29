@@ -7,9 +7,12 @@ from rest_framework.status import HTTP_400_BAD_REQUEST
 import pydub
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 import os 
-# import librosa    
-
-
+import librosa
+import soundfile as sf
+import wave
+import numpy as np
+import glob 
+from pydub.playback import play
 
 @api_view(['POST'])
 # @api_view(['GET'])
@@ -18,22 +21,16 @@ import os
 
 
 def api_convert(request):
-    def change_file(file):
-        # mp3=glob.glob('*.mp3')
+    def change_file(mp3_file):
+ 
         wav='fff'+'.wav'
         print('here ')
-     
-        mp3_file=file
-
         sound=pydub.AudioSegment.from_mp3(mp3_file)
+        sound=sound.set_frame_rate(8000)
         sound.export(wav, format="wav")
-        # y, sr = librosa.load(wav, sr=8000) # Downsample to 8kHz
-        # librosa.output.write_wav(wav, y, sr)
-    # sound.export(wav,format="wav")
-        return     'c'
-   
-   
-
+        x = np.fromfile(open(wav),np.int16)[24:]
+        print(x)
+        return x
     #  return HttpResponse("<h1>MyClub Event Calendar</h1>")
     try:
         method='ll'
@@ -51,10 +48,12 @@ def api_convert(request):
     # file = open("/path/to/your/song.mp3", "rb").read() 
 
     try:    
-        wav='fff'+'.wav'
-        print('here ')
-        file=change_file(file)
-        response = HttpResponse(file, content_type='audio/wav')
+ 
+        print(file)
+        temp=change_file(file)
+        awesome_song = pydub.AudioSegment.from_wav('fff.wav')
+        play(awesome_song)
+        response = HttpResponse(awesome_song, content_type='audio/wav')
         response['Content-Disposition'] = 'attachment; filename="foo.xls"'
         print('finishes ')
     except IOError:
